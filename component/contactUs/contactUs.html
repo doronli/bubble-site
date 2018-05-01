@@ -1,0 +1,43 @@
+<div class="container">
+    <div>  <!-- ng-controller="formCtrl" -->
+        <h2 style="margin-top:30px" class="text-center text-primary">מלא את הפרטים, כנס להגרלה ופעם בחודש נכריז על המנצח שיקבל משחק חינם!</h2>
+        <hr>
+        <form name="userForm" class="form-horizontal well form-search">
+            <div class="row form-group" style="text-align:left">
+                <label for="name" class="col-xl-2 col-sm-3 control-label">שם מלא</label>
+                <div class="col-xl-4 col-sm-5">
+                    <input type="name" ng-model="name" name="name" class="form-control" id="name" placeholder="שם מלא" required>
+                </div>
+            </div>
+            <div class="row form-group" style="text-align:left">
+                <label for="phone" class="col-xl-2 col-sm-3 control-label">טלפון</label>
+                <div class="col-xl-4 col-sm-5">
+                    <input type="phone" ng-model="phone" class="form-control" id="phone" placeholder="טלפון" required>
+                </div>
+            </div>
+            <div class="row form-group" style="text-align:left">
+                <label for="email" class="col-xl-2 col-sm-3 control-label">אימייל</label>
+                <div class="col-xl-4 col-sm-5">
+                    <input type="email" ng-model="email" class="form-control" id="email" placeholder="example@gmail.com" required>
+                </div>
+            </div>
+            <div class="row form-group" style="text-align:left">
+                <label for="Message" class="col-xl-2 col-sm-3 control-label">הודעה</label>
+                <div class="col-xl-7 col-sm-7">
+                    <textarea ng-model="message" id="Message" class="form-control" rows="3" placeholder="כתוב לנו למה אתה צריך לקבל משחק חינם" required></textarea>
+                </div>
+            </div>
+            <div class="row form-group ">
+                <div class="col-xl-4 col-sm-5"></div>                
+                <div class="col-xl-4 col-sm-5">
+                    <button type="submit" ng-click="formsubmit(userForm.$valid)" ng-disabled="userForm.$invalid" class="btn btn-primary ">שלח</button>
+                </div>
+                <div class="col-xl-4 col-sm-5"></div>
+                
+            </div>
+        </form>
+        <pre ng-model="result">
+            {{result}}
+        </pre>
+    </div>
+</div>
