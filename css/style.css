@@ -44,6 +44,29 @@ nav{
 }
 /*BEGGIN home page*/
 
+.light-box{
+    border-top-width: 10px;
+    border-right-width: 10px;
+    border-bottom-width: 40px;
+    border-left-width: 10px;
+    border-style: solid;
+    border-color: white;
+    box-shadow: 0px 0px 10px #cecece;
+    float: left;
+    height: 150px;
+    margin: 0px 10px; 
+  }
+
+.photo-gallery-description{
+    color: #333333;
+    font-family: 'Racing Sans One', cursive;
+    font-size: 14px;
+    margin-bottom: 20px;
+    position: absolute;
+    text-transform: uppercase;
+}
+
+
 
 /*END home page*/
 
@@ -102,13 +125,30 @@ li:last-child {
     background-color: white;
     position: relative;
 }
-.footer{
+.footer-site{
     background-color: rgb(35, 47, 68);
     padding-top: 4px;
     color:white;
     box-sizing: border-box;
 }
-
+.footer-center{
+    text-align: center;
+}
+.footer-right{
+    margin-right:20px;
+}
+.footer-build-site{
+    display: block;
+    margin-right: 30px;
+}
+.social-icon-footer{
+    display: inline;
+    font-size: 30px;
+    
+}
+.social-icon-footer:hover{
+    text-decoration: ;
+}
 .row{
     margin-left: 0px;
 }
@@ -186,10 +226,10 @@ li:last-child {
 .social {
     display: contents !important;
 	margin: 0 auto;
-	width: 500px;
 	text-align: center;
-    padding: 50px;
-}
+	/* width: 500px; */
+    /* padding: 50px; */
+} 
 
 .icon-btn {
     position: fixed;
@@ -209,8 +249,7 @@ li:last-child {
 
 .twitter {
     color: #4099FF;
-    left: 0px;
-    
+    left: 0px;    
 }
 
 .facebook {
@@ -249,10 +288,16 @@ li:last-child {
 }
 
 a.link {
-	color: inherit;	
+    color: inherit;	
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
 }
 .question-color{
     color:#fff;
+}
+a.link:hover{
+    text-decoration: none;
 }
 /*END social-media-icon*/
 
