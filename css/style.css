@@ -147,7 +147,7 @@ li:last-child {
     
 }
 .social-icon-footer:hover{
-    text-decoration: ;
+    /* text-decoration: ; */
 }
 .row{
     margin-left: 0px;
@@ -294,7 +294,8 @@ a.link {
     cursor: pointer;
 }
 .question-color{
-    color:#fff;
+    color:rgb(35, 47, 68);
+    font-weight: bold;
 }
 a.link:hover{
     text-decoration: none;
@@ -347,8 +348,19 @@ a.link:hover{
     -webkit-align-items: center;
     align-items: center;
   }
-
+/***** BEGGIN contact us ******/
+.contact-us-phone{
+font-size: 120%;
+font-weight: bold;
+}
+.contact-us-phone:last-child{
+    display: block;
+}
+/**** END contact us ******/
 @media(max-width: 760px) {
+    html, body {
+    height: 0px;
+  }
     ul{
         width: 100%;
         display: none;
@@ -371,8 +383,12 @@ a.link:hover{
     .twitter, .facebook, .youtube, .instagram{
         display: none;
     }
+
 }
 @media(max-width: 400px){
+     html, body {
+    height: 0px;
+  }
     .btn-link{
         font-size: 90%;
     }
