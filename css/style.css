@@ -365,6 +365,9 @@ font-weight: bold;
 .contact-us-phone:last-child{
     display: block;
 }
+.freebirdFormviewerViewFooterDisclaimer, .freebirdFormviewerViewFooterNoTextDecoration, .freebirdDisclaimerColor{
+display: none !important;
+}
 /**** END contact us ******/
 @media(max-width: 760px) {
     html, body {
