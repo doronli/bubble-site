@@ -150,18 +150,15 @@ li:hover{
     color:white;
     box-sizing: border-box;
 }
-.footer-center{
-    text-align: center;
-}
-.footer-right{
-    margin-right:20px;
+.footer-write-by{
+    
 }
 .footer-build-site{
     display: block;
     margin-right: 30px;
 }
 .social-icon-footer{
-    display: inline;
+    display: none;
     font-size: 30px;
     
 }
@@ -243,17 +240,19 @@ li:hover{
 
 /*BEGGIN social-media icon*/
 .social {
-    display: contents !important;
+    
+    position: fixed;
+    left:15px;
+    top:100px;
 	margin: 0 auto;
-	text-align: center;
-	/* width: 500px; */
-    /* padding: 50px; */
+    text-align: center;
+    z-index: 999999;
+    
+	width: 50px;
 } 
 
 .icon-btn {
-    position: fixed;
-    top:0px;
-    display: inline-block;
+    display: block;
 	height: 60px;
 	width: 60px;
 	border: 0;
@@ -263,7 +262,6 @@ li:hover{
 	transition: ease-in-out .3s;
 	border-radius: 50%;
     margin-left: 10px;
-    margin-bottom: 10px;
 }
 
 .twitter {
@@ -433,6 +431,9 @@ display: none !important;
     }
     .body-content{
         height: auto; 
+   }
+   .social-icon-footer{
+        display: inline;
    }
   
 }
