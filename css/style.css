@@ -1,5 +1,5 @@
 html, body {
-    height: 980px;
+    /* height: 980px; */
   }
 
 body{
@@ -65,7 +65,26 @@ nav{
     position: absolute;
     text-transform: uppercase;
 }
-
+.home-text{
+    margin-top:20px;
+    margin-bottom:20px;
+    text-align: center;    
+}
+.home-text > p{
+    font-size: 120%;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.home-text > span{
+  font-size: 125%;
+}
+.home-text > .home-youtube-funny-video{
+    margin-top: 30px;
+    font-size: 120%;
+}
+.home-text > .home-text-price{
+    cursor: pointer;
+}
 
 
 /*END home page*/
@@ -398,7 +417,9 @@ display: none !important;
     .body-content{
         height: auto; 
    }
-
+   .img-home-text, .swiper-button-next, .swiper-button-prev{
+       display: none;
+   }
 }
 @media(max-width: 400px){
      html, body {
@@ -416,7 +437,7 @@ display: none !important;
   
 }
 @media(max-width: 320px){
-    .swiper-button-next{
+    /* .swiper-button-next{
         right: 1px !important;
         top:100px !important;
     }
@@ -424,27 +445,27 @@ display: none !important;
         left: 1px !important;
         top:100px !important;
 
-    }
+    } */
 }
 @media (max-width: 360px){
-    .swiper-button-next{
+    /* .swiper-button-next{
         right: 1px !important;
         top:111px !important;
     }
     .swiper-button-prev{
         left: 1px !important;
         top:111px !important;
-    }
+    } */
 
 }
 @media (max-width: 420px){
-    .swiper-button-next{
+    /* .swiper-button-next{
         right: 1px !important;
         top:111px !important;
     }
     .swiper-button-prev{
         left: 1px !important;
         top:111px !important;
-    }
+    } */
 
 }
