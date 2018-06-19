@@ -1,15 +1,11 @@
 html, body {
-    height: 980px;
+    /* height: 980px; */
   }
 
 body{
     direction: rtl !important;
     /* height: 100vh; */
     background-color: #eef1f5;
-    /*background-image:url(../../img/cover-photo.png);
-    background-size:cover;
-    background-position: bottom; 
-    background-repeat: no-repeat;*/
 }
 .body-content{
      height: 100%; 
@@ -65,7 +61,26 @@ nav{
     position: absolute;
     text-transform: uppercase;
 }
-
+.home-text{
+    margin-top:20px;
+    margin-bottom:20px;
+    text-align: center;    
+}
+.home-text > p{
+    font-size: 120%;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.home-text > span{
+  font-size: 125%;
+}
+.home-text > .home-youtube-funny-video{
+    margin-top: 30px;
+    font-size: 120%;
+}
+.home-text > .home-text-price{
+    cursor: pointer;
+}
 
 
 /*END home page*/
@@ -131,18 +146,15 @@ li:hover{
     color:white;
     box-sizing: border-box;
 }
-.footer-center{
-    text-align: center;
-}
-.footer-right{
-    margin-right:20px;
+.footer-write-by{
+    
 }
 .footer-build-site{
     display: block;
     margin-right: 30px;
 }
 .social-icon-footer{
-    display: inline;
+    display: none;
     font-size: 30px;
     
 }
@@ -224,17 +236,19 @@ li:hover{
 
 /*BEGGIN social-media icon*/
 .social {
-    display: contents !important;
+    
+    position: fixed;
+    left:15px;
+    top:100px;
 	margin: 0 auto;
-	text-align: center;
-	/* width: 500px; */
-    /* padding: 50px; */
+    text-align: center;
+    z-index: 999999;
+    
+	width: 50px;
 } 
 
 .icon-btn {
-    position: fixed;
-    top:0px;
-    display: inline-block;
+    display: block;
 	height: 60px;
 	width: 60px;
 	border: 0;
@@ -244,7 +258,6 @@ li:hover{
 	transition: ease-in-out .3s;
 	border-radius: 50%;
     margin-left: 10px;
-    margin-bottom: 10px;
 }
 
 .twitter {
@@ -398,7 +411,9 @@ display: none !important;
     .body-content{
         height: auto; 
    }
-
+   .img-home-text, .swiper-button-next, .swiper-button-prev{
+       display: none;
+   }
 }
 @media(max-width: 400px){
      html, body {
@@ -413,10 +428,13 @@ display: none !important;
     .body-content{
         height: auto; 
    }
+   .social-icon-footer{
+        display: inline;
+   }
   
 }
 @media(max-width: 320px){
-    .swiper-button-next{
+    /* .swiper-button-next{
         right: 1px !important;
         top:100px !important;
     }
@@ -424,27 +442,27 @@ display: none !important;
         left: 1px !important;
         top:100px !important;
 
-    }
+    } */
 }
 @media (max-width: 360px){
-    .swiper-button-next{
+    /* .swiper-button-next{
         right: 1px !important;
         top:111px !important;
     }
     .swiper-button-prev{
         left: 1px !important;
         top:111px !important;
-    }
+    } */
 
 }
 @media (max-width: 420px){
-    .swiper-button-next{
+    /* .swiper-button-next{
         right: 1px !important;
         top:111px !important;
     }
     .swiper-button-prev{
         left: 1px !important;
         top:111px !important;
-    }
+    } */
 
 }
