@@ -146,9 +146,7 @@ li:hover{
     color:white;
     box-sizing: border-box;
 }
-.footer-write-by{
-    
-}
+
 .footer-build-site{
     display: block;
     margin-right: 30px;
@@ -158,9 +156,7 @@ li:hover{
     font-size: 30px;
     
 }
-.social-icon-footer:hover{
-    /* text-decoration: ; */
-}
+
 .row{
     margin-left: 0px;
 }
@@ -356,9 +352,7 @@ a.link:hover{
     font-size: 18px;
   }
 
-  /* .swiper-wrapper {
-      width: 80%;
-  } */
+ 
 
   .inner-slide {
       border: 1px solid #cecece;
@@ -431,38 +425,10 @@ display: none !important;
    .social-icon-footer{
         display: inline;
    }
-  
-}
-@media(max-width: 320px){
-    /* .swiper-button-next{
-        right: 1px !important;
-        top:100px !important;
-    }
-    .swiper-button-prev{
-        left: 1px !important;
-        top:100px !important;
-
-    } */
-}
-@media (max-width: 360px){
-    /* .swiper-button-next{
-        right: 1px !important;
-        top:111px !important;
-    }
-    .swiper-button-prev{
-        left: 1px !important;
-        top:111px !important;
-    } */
-
-}
-@media (max-width: 420px){
-    /* .swiper-button-next{
-        right: 1px !important;
-        top:111px !important;
-    }
-    .swiper-button-prev{
-        left: 1px !important;
-        top:111px !important;
-    } */
-
+  .footer-site{
+      text-align: center !important;
+  }
+  #socialMediaFooter{
+      margin-right: 20px;
+  }
 }

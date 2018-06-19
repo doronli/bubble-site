@@ -65,9 +65,6 @@ $(document).ready(function () {
             $('#' + pageId).addClass('active');
     }
    
-<<<<<<< HEAD
-
-=======
     //Contact us form
     $(document).on("click", '#contact-us-button', function () {
         var error = ValidationContactForm();
@@ -90,7 +87,6 @@ $(document).ready(function () {
             });
         }
     });
->>>>>>> 699aa167472c8e4553513aea6216384458e7468d
     
 
 });
