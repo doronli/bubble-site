@@ -3,16 +3,16 @@
   if(isset($_POST['email'])){
 	  
 	$name =$_POST["name"];
-<<<<<<< HEAD
 	$phone = $_POST["phone"];
-=======
->>>>>>> 699aa167472c8e4553513aea6216384458e7468d
 	$from =$_POST["email"];
-	$subject=$_POST["subject"];
+	//$subject=$_POST["subject"];
 	$comment=$_POST["comment"];
 	
 	// Email Receiver Address
 	$receiver="lisbona107@gmail.com";
+	$receiver2="mipinhasov101@gmail.com";
+	$receiver3="funsportisrael@gmail.com";
+	
 	$subject="Contact form details";
 
 	$message = "
@@ -37,7 +37,6 @@
 	<td align='right' valign='top' style='border-top:1px solid #dfdfdf; font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#000; padding:7px 5px 7px 0;'>Email:</td>
 	<td align='left' valign='top' style='border-top:1px solid #dfdfdf; font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#000; padding:7px 0 7px 5px;'>".$from."</td>
 	</tr>
-<<<<<<< HEAD
 
 	<tr>
 	<td align='right' valign='top' style='border-top:1px solid #dfdfdf; font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#000; padding:7px 5px 7px 0;'>Email:</td>
@@ -62,10 +61,13 @@ $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 // More headers
 $headers .= 'From: <'.$from.'>' . "\r\n";
 
+
    if(mail($receiver,$subject,$message,$headers))  
    {
 	   //Success Message
-      echo "The message has been sent!";
+	  	echo "ההודעה נשלחה בהצלחה!";
+		mail($receiver3,$subject,$message,$headers);
+	  	mail($receiver2,$subject,$message,$headers);
    }
    else
    {	
@@ -73,35 +75,5 @@ $headers .= 'From: <'.$from.'>' . "\r\n";
       echo "The message could not been sent!";
    }
 
-=======
-		<tr>
-	<td align='right' valign='top' style='border-top:1px solid #dfdfdf; font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#000; padding:7px 5px 7px 0;'>Subject:</td>
-	<td align='left' valign='top' style='border-top:1px solid #dfdfdf; font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#000; padding:7px 0 7px 5px;'>".$subject."</td>
-	</tr>
-	<tr>
-	<td align='right' valign='top' style='border-top:1px solid #dfdfdf; border-bottom:1px solid #dfdfdf; font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#000; padding:7px 5px 7px 0;'>Message:</td>
-	<td align='left' valign='top' style='border-top:1px solid #dfdfdf; border-bottom:1px solid #dfdfdf; font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#000; padding:7px 0 7px 5px;'>".nl2br($comment)."</td>
-	</tr>
-	</table>
-	</body>
-	</html>
-	";
-// Always set content-type when sending HTML email
-$headers = "MIME-Version: 1.0" . "\r\n";
-$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-// More headers
-$headers .= 'From: <'.$from.'>' . "\r\n";
-   if(mail($receiver,$subject,$message,$headers))  
-   {
-	   //Success Message
-      echo "The message has been sent!";
-   }
-   else
-   {	
-   	 //Fail Message
-      echo "The message could not been sent!";
-   }
-
->>>>>>> 699aa167472c8e4553513aea6216384458e7468d
 }
 ?>

@@ -64,29 +64,7 @@ $(document).ready(function () {
             $('li').removeClass('active');
             $('#' + pageId).addClass('active');
     }
-   
-    //Contact us form
-    $(document).on("click", '#contact-us-button', function () {
-        var error = ValidationContactForm();
-        if (error) {
-            $.ajax({
-                type: "POST",
-                url: "../component/contactUs/contact_form.php",
-                data: $("#contact-form").serialize(),
-                success: function (result) {
-                    // Un-comment below code to redirect user to thank you page.
-                    //window.location.href="thank-you.html";
 
-                    $('input[type=text],textarea').each(function () {
-                        $(this).val('');
-                    });
-                    $("#success-contact-form").html(result);
-                    $("#success-contact-form").fadeIn("slow");
-                    $('#success-contact-form').delay(4000).fadeOut("slow");
-                }
-            });
-        }
-    });
     
 
 });
